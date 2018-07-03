@@ -1,14 +1,14 @@
 latex-homework-template
 =======================
 
-O arquivo LaTeX que uso como base pra meus trabalhos da universidade.
+O arquivo LaTeX que uso como base para meus trabalhos da universidade.
 
-## Features
+## Características
 
 Essa são algumas das características desse template.
 
 1. Página de Título.
-2. Marcador de problemas.
+2. Problemas marcados.
 3. Número de problemas configuravel (veja os últimos 3 problemas para exemplos).
 4. Macros matématicos comuns.
 
@@ -21,6 +21,13 @@ Essa são algumas das características desse template.
    ```bash
    $ latexmk homework.tex
    ```
+
+   ou
+
+   ```bash
+   $ pdflatex homework.tex
+   ```
+   
 3. Ou você pode usar [TeXShop][texshop] ou outra ferramenta para editar e compilar arquivos
    LaTeX.
 
