@@ -41,21 +41,21 @@
 %
 
 \newcommand{\enterProblemHeader}[1]{
-    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
-    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{}{Problema \arabic{#1} continua na próxima página\ldots}\nobreak{}
+    \nobreak\extramarks{Problema \arabic{#1} (continuação)}{Problema \arabic{#1} continua na próxima página\ldots}\nobreak{}
 }
 
 \newcommand{\exitProblemHeader}[1]{
-    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problema \arabic{#1} (continuação)}{Problema \arabic{#1} continua na próxima página\ldots}\nobreak{}
     \stepcounter{#1}
-    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    \nobreak\extramarks{Problema \arabic{#1}}{}\nobreak{}
 }
 
 \setcounter{secnumdepth}{0}
 \newcounter{partCounter}
 \newcounter{homeworkProblemCounter}
 \setcounter{homeworkProblemCounter}{1}
-\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+\nobreak\extramarks{Problema \arabic{homeworkProblemCounter}}{}\nobreak{}
 
 %
 % Homework Problem Environment
@@ -69,7 +69,7 @@
     \ifnum#1>0
         \setcounter{homeworkProblemCounter}{#1}
     \fi
-    \section{Problem \arabic{homeworkProblemCounter}}
+    \section{Problema \arabic{homeworkProblemCounter}}
     \setcounter{partCounter}{1}
     \enterProblemHeader{homeworkProblemCounter}
 }{
@@ -86,12 +86,12 @@
 %   - Author
 %
 
-\newcommand{\hmwkTitle}{Homework\ \#2}
-\newcommand{\hmwkDueDate}{February 12, 2014}
-\newcommand{\hmwkClass}{Calculus}
-\newcommand{\hmwkClassTime}{Section A}
+\newcommand{\hmwkTitle}{Homework\ \#1}
+\newcommand{\hmwkDueDate}{27/06/2018}
+\newcommand{\hmwkClass}{Cálculo}
+\newcommand{\hmwkClassTime}{Seção A}
 \newcommand{\hmwkClassInstructor}{Professor Isaac Newton}
-\newcommand{\hmwkAuthorName}{\textbf{Josh Davis} \and \textbf{Davis Josh}}
+\newcommand{\hmwkAuthorName}{\textbf{Autor 1} \and \textbf{Autor 2}}
 
 %
 % Title Page
@@ -100,7 +100,7 @@
 \title{
     \vspace{2in}
     \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
-    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 3:10pm}\\
+    \normalsize\vspace{0.1in}\small{Fazer\ até\ \hmwkDueDate\ às 15:10}\\
     \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
     \vspace{3in}
 }
@@ -108,7 +108,13 @@
 \author{\hmwkAuthorName}
 \date{}
 
-\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+\renewcommand{\part}[1]{\textbf{\large Parte \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+\renewcommand*{\proofname}{Prova}
+
+\makeatletter
+\renewcommand*{\ALG@name}{Algoritmo}
+\makeatother
 
 %
 % Various Helper Commands
@@ -127,7 +133,7 @@
 \newcommand{\dx}{\mathrm{d}x}
 
 % Alias for the Solution section header
-\newcommand{\solution}{\textbf{\large Solution}}
+\newcommand{\solution}{\textbf{\large Solução}}
 
 % Probability commands: Expectation, Variance, Covariance, Bias
 \newcommand{\E}{\mathrm{E}}
@@ -142,8 +148,8 @@
 \pagebreak
 
 \begin{homeworkProblem}
-    Give an appropriate positive constant \(c\) such that \(f(n) \leq c \cdot
-    g(n)\) for all \(n > 1\).
+    Dê uma constante apropriada \(c\) de modo que \(f(n) \leq c \cdot
+    g(n)\) para todo \(n > 1\).
 
     \begin{enumerate}
         \item \(f(n) = n^2 + n + 1\), \(g(n) = 2n^3\)
@@ -153,11 +159,11 @@
 
     \textbf{Solution}
 
-    We solve each solution algebraically to determine a possible constant
+    Nos resolvemos cada solução algebraicamente para determinar a possível constante
     \(c\).
     \\
 
-    \textbf{Part One}
+    \textbf{Parte Um}
 
     \[
         \begin{split}
@@ -171,10 +177,10 @@
         \end{split}
     \]
 
-    Thus a valid \(c\) could be when \(c = 2\).
+    Assim um \(c\) válido pode ser quando \(c = 2\).
     \\
 
-    \textbf{Part Two}
+    \textbf{Parte Dois}
 
     \[
         \begin{split}
@@ -192,10 +198,10 @@
         \end{split}
     \]
 
-    Thus a valid \(c\) is \(c = 2\).
+    Assim um \(c\) válido é \(c = 2\).
     \\
 
-    \textbf{Part Three}
+    \textbf{Parte Três}
 
     \[
         \begin{split}
@@ -207,7 +213,7 @@
         \end{split}
     \]
 
-    Thus a valid \(c\) is \(c = 2\).
+    Assim um \(c\) válido é \(c = 2\).
 
 \end{homeworkProblem}
 
@@ -251,7 +257,7 @@
         \label{fig:multiple5}
     \end{figure}
 
-    \textbf{Justification}
+    \textbf{Justificativa}
     \\
 
     Take a given binary number, \(x\). Since there are only two inputs to our
